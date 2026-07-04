@@ -1,0 +1,84 @@
+conda activate opencv_playground
+/opt/anaconda3/envs/opencv_playground/bin/python /Users/Sapphire_20s/Desktop/OpenCV_playground/YOLO_04.py
+(base) Sapphire_20s@A7DC59 OpenCV_playground % conda activate opencv_playground
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/envs/opencv_
+playground/bin/python /Users/Sapphire_20s/Desktop/OpenCV_playground/YOLO_04.py
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/envs/opencv_playground/bin/python /Users/Sapphi
+re_20s/Desktop/OpenCV_playground/YOLO_04.py
+Traceback (most recent call last):
+  File "/Users/Sapphire_20s/Desktop/OpenCV_playground/YOLO_04.py", line 21, in <module>
+    frame_gray=cv2.cvtColor(frame,cv2.COLOR_BAYER_BG2GRAY)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.10.0) /Users/runner/work/opencv-python/opencv-python/opencv/modules/imgproc/src/demosaicing.cpp:1701: error: (-215:Assertion failed) scn == 1 && dcn == 1 in function 'demosaicing'
+
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/envs/opencv_playground/bin/python /Users/Sapphi
+re_20s/Desktop/OpenCV_playground/YOLO_04.py
+Traceback (most recent call last):
+  File "/Users/Sapphire_20s/Desktop/OpenCV_playground/YOLO_04.py", line 24, in <module>
+    results=model.predict(frame_gray,conf=0.25,verbose=False)#对照-2:处理灰度帧
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/engine/model.py", line 541, in predict
+    return self.predictor.predict_cli(source=source) if is_cli else self.predictor(source=source, stream=stream)
+                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/engine/predictor.py", line 228, in __call__
+    return list(self.stream_inference(source, model, *args, **kwargs))  # merge list of Results into one
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 35, in generator_context
+    response = gen.send(None)
+               ^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/engine/predictor.py", line 337, in stream_inference
+    preds = self.inference(im, *args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/engine/predictor.py", line 185, in inference
+    return self.model(im, augment=self.args.augment, visualize=visualize, embed=self.args.embed, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/nn/autobackend.py", line 278, in forward
+    y = self.backend.forward(im, **forward_kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/nn/backends/pytorch.py", line 90, in forward
+    return self.model(im, augment=augment, visualize=visualize, embed=embed, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/nn/tasks.py", line 154, in forward
+    return self.predict(x, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/nn/tasks.py", line 171, in predict
+    return self._predict_once(x, profile, visualize, embed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/nn/tasks.py", line 193, in _predict_once
+    x = m(x)  # run
+        ^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/nn/modules/conv.py", line 89, in forward_fuse
+    return self.act(self.conv(x))
+                    ^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 460, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 456, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Given groups=1, weight of size [16, 3, 3, 3], expected input[1, 1, 384, 640] to have 3 channels, but got 1 channels instead
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % 
