@@ -1,0 +1,30 @@
+conda activate opencv_playground
+/opt/anaconda3/envs/opencv_playground/bin/python /Users/Sapphire_20s/Desktop/OpenCV_playground/YOLO_05.py
+(base) Sapphire_20s@A7DC59 OpenCV_playground % conda activate opencv_playground
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/envs/opencv_playground/bin/py
+thon /Users/Sapphire_20s/Desktop/OpenCV_playground/YOLO_05.py
+<class 'ultralytics.engine.results.Results'>
+*********************************
+ultralytics.engine.results.Boxes object with attributes:
+
+cls: tensor([0.])
+conf: tensor([0.9010])
+data: tensor([[441.9126, 330.6824, 793.6066, 715.6605,   0.9010,   0.0000]])
+id: None
+is_track: False
+orig_shape: (720, 1280)
+shape: torch.Size([1, 6])
+xywh: tensor([[617.7596, 523.1714, 351.6940, 384.9780]])
+xywhn: tensor([[0.4826, 0.7266, 0.2748, 0.5347]])
+xyxy: tensor([[441.9126, 330.6824, 793.6066, 715.6605]])
+xyxyn: tensor([[0.3452, 0.4593, 0.6200, 0.9940]])
+*********************************
+tensor([[441.9126, 330.6824, 793.6066, 715.6605]])
+*********************************
+tensor([0.])
+*********************************
+person
+*********************************
+tensor([0.9010])
+*********************************
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % 
