@@ -1,0 +1,250 @@
+conda activate opencv_playground
+/opt/anaconda3/envs/opencv_playground/bin/python /Users/Sapphire_20s/Desktop/OpenCV_playground/YOLO_00.py
+(base) Sapphire_20s@A7DC59 OpenCV_playground % conda activate opencv_playground
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/envs/opencv_playground/bin/python /Users/Sapphire_20s/Desktop/OpenCV_pla
+yground/YOLO_00.py
+Traceback (most recent call last):
+  File "/Users/Sapphire_20s/Desktop/OpenCV_playground/YOLO_00.py", line 8, in <module>
+    from ultralytics import YOLO
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/__init__.py", line 13, in <module>
+    from ultralytics.utils import ASSETS, SETTINGS
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/utils/__init__.py", line 26, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/envs/opencv_playground/bin/python /Users/Sapphire_20s/Desktop/OpenCV_pla
+yground/YOLO_00.py
+Traceback (most recent call last):
+  File "/Users/Sapphire_20s/Desktop/OpenCV_playground/YOLO_00.py", line 8, in <module>
+    from ultralytics import YOLO
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/__init__.py", line 13, in <module>
+    from ultralytics.utils import ASSETS, SETTINGS
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/utils/__init__.py", line 26, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % pip show torchvision
+WARNING: Package(s) not found: torchvision
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % pip install torch==2.2.2 torchvision==0.17.2
+Collecting torch==2.2.2
+  Using cached torch-2.2.2-cp311-none-macosx_10_9_x86_64.whl.metadata (25 kB)
+Collecting torchvision==0.17.2
+  Using cached torchvision-0.17.2-cp311-cp311-macosx_10_13_x86_64.whl.metadata (6.6 kB)
+Collecting filelock (from torch==2.2.2)
+  Using cached filelock-3.29.4-py3-none-any.whl.metadata (2.0 kB)
+Collecting typing-extensions>=4.8.0 (from torch==2.2.2)
+  Using cached typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting sympy (from torch==2.2.2)
+  Using cached sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting networkx (from torch==2.2.2)
+  Using cached networkx-3.6.1-py3-none-any.whl.metadata (6.8 kB)
+Collecting jinja2 (from torch==2.2.2)
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting fsspec (from torch==2.2.2)
+  Using cached fsspec-2026.6.0-py3-none-any.whl.metadata (10 kB)
+Requirement already satisfied: numpy in /opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages (from torchvision==0.17.2) (2.4.6)
+Collecting pillow!=8.3.*,>=5.3.0 (from torchvision==0.17.2)
+  Using cached pillow-12.2.0-cp311-cp311-macosx_10_10_x86_64.whl.metadata (8.8 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->torch==2.2.2)
+  Using cached markupsafe-3.0.3-cp311-cp311-macosx_10_9_x86_64.whl.metadata (2.7 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy->torch==2.2.2)
+  Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Using cached torch-2.2.2-cp311-none-macosx_10_9_x86_64.whl (150.8 MB)
+Using cached torchvision-0.17.2-cp311-cp311-macosx_10_13_x86_64.whl (1.7 MB)
+Using cached pillow-12.2.0-cp311-cp311-macosx_10_10_x86_64.whl (5.4 MB)
+Using cached typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Using cached filelock-3.29.4-py3-none-any.whl (42 kB)
+Using cached fsspec-2026.6.0-py3-none-any.whl (203 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached markupsafe-3.0.3-cp311-cp311-macosx_10_9_x86_64.whl (11 kB)
+Using cached networkx-3.6.1-py3-none-any.whl (2.1 MB)
+Using cached sympy-1.14.0-py3-none-any.whl (6.3 MB)
+Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+Installing collected packages: mpmath, typing-extensions, sympy, pillow, networkx, MarkupSafe, fsspec, filelock, jinja2, torch, torchvision
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+ultralytics 8.4.83 requires matplotlib>=3.3.0, which is not installed.
+ultralytics 8.4.83 requires nvidia-ml-py>=12.0.0, which is not installed.
+ultralytics 8.4.83 requires polars>=0.20.0, which is not installed.
+ultralytics 8.4.83 requires psutil>=5.8.0, which is not installed.
+ultralytics 8.4.83 requires pyyaml>=5.3.1, which is not installed.
+ultralytics 8.4.83 requires requests>=2.23.0, which is not installed.
+ultralytics 8.4.83 requires ultralytics-thop>=2.0.18, which is not installed.
+Successfully installed MarkupSafe-3.0.3 filelock-3.29.4 fsspec-2026.6.0 jinja2-3.1.6 mpmath-1.3.0 networkx-3.6.1 pillow-12.2.0 sympy-1.14.0 torch-2.2.2 torchvision-0.17.2 typing-extensions-4.15.0
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/envs/opencv_playground/bin/python /Users/Sapphire_20s/Desktop/OpenCV_pla
+yground/YOLO_00.py
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.4.6 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/Users/Sapphire_20s/Desktop/OpenCV_playground/YOLO_00.py", line 8, in <module>
+    from ultralytics import YOLO
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/__init__.py", line 13, in <module>
+    from ultralytics.utils import ASSETS, SETTINGS
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/utils/__init__.py", line 26, in <module>
+    import torch
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/torch/__init__.py", line 1477, in <module>
+    from .functional import *  # noqa: F403
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/torch/functional.py", line 9, in <module>
+    import torch.nn.functional as F
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/torch/nn/__init__.py", line 1, in <module>
+    from .modules import *  # noqa: F403
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/torch/nn/modules/__init__.py", line 35, in <module>
+    from .transformer import TransformerEncoder, TransformerDecoder, \
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 20, in <module>
+    device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/torch/nn/modules/transformer.py:20: UserWarning: Failed to initialize NumPy: _ARRAY_API not found (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
+  device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+Traceback (most recent call last):
+  File "/Users/Sapphire_20s/Desktop/OpenCV_playground/YOLO_00.py", line 8, in <module>
+    from ultralytics import YOLO
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/__init__.py", line 13, in <module>
+    from ultralytics.utils import ASSETS, SETTINGS
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/utils/__init__.py", line 680, in <module>
+    DEFAULT_CFG_DICT = YAML.load(DEFAULT_CFG_PATH)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/utils/__init__.py", line 626, in load
+    instance = cls._get_instance()
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/utils/__init__.py", line 570, in _get_instance
+    cls._instance = cls()
+                    ^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/utils/__init__.py", line 575, in __init__
+    import yaml
+ModuleNotFoundError: No module named 'yaml'
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % pip install numpy==1.26.4
+Collecting numpy==1.26.4
+  Downloading numpy-1.26.4-cp311-cp311-macosx_10_9_x86_64.whl.metadata (61 kB)
+Downloading numpy-1.26.4-cp311-cp311-macosx_10_9_x86_64.whl (20.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 20.6/20.6 MB 4.3 MB/s  0:00:04
+Installing collected packages: numpy
+  Attempting uninstall: numpy
+    Found existing installation: numpy 2.4.6
+    Uninstalling numpy-2.4.6:
+      Successfully uninstalled numpy-2.4.6
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+ultralytics 8.4.83 requires matplotlib>=3.3.0, which is not installed.
+ultralytics 8.4.83 requires nvidia-ml-py>=12.0.0, which is not installed.
+ultralytics 8.4.83 requires polars>=0.20.0, which is not installed.
+ultralytics 8.4.83 requires psutil>=5.8.0, which is not installed.
+ultralytics 8.4.83 requires pyyaml>=5.3.1, which is not installed.
+ultralytics 8.4.83 requires requests>=2.23.0, which is not installed.
+ultralytics 8.4.83 requires ultralytics-thop>=2.0.18, which is not installed.
+Successfully installed numpy-1.26.4
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % pip install yaml
+ERROR: Could not find a version that satisfies the requirement yaml (from versions: none)
+ERROR: No matching distribution found for yaml
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % pip install pyyaml
+Collecting pyyaml
+  Using cached pyyaml-6.0.3-cp311-cp311-macosx_10_13_x86_64.whl.metadata (2.4 kB)
+Using cached pyyaml-6.0.3-cp311-cp311-macosx_10_13_x86_64.whl (185 kB)
+Installing collected packages: pyyaml
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+ultralytics 8.4.83 requires matplotlib>=3.3.0, which is not installed.
+ultralytics 8.4.83 requires nvidia-ml-py>=12.0.0, which is not installed.
+ultralytics 8.4.83 requires polars>=0.20.0, which is not installed.
+ultralytics 8.4.83 requires psutil>=5.8.0, which is not installed.
+ultralytics 8.4.83 requires requests>=2.23.0, which is not installed.
+ultralytics 8.4.83 requires ultralytics-thop>=2.0.18, which is not installed.
+Successfully installed pyyaml-6.0.3
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/envs/opencv_playground/bin/python /Users/Sapphire_20s/Desktop/OpenCV_pla
+yground/YOLO_00.py
+Creating new Ultralytics Settings v0.0.6 file ✅ 
+View Ultralytics Settings with 'yolo settings' or at '/Users/Sapphire_20s/Library/Application Support/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
+Traceback (most recent call last):
+  File "/Users/Sapphire_20s/Desktop/OpenCV_playground/YOLO_00.py", line 8, in <module>
+    from ultralytics import YOLO
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/__init__.py", line 38, in __getattr__
+    return getattr(importlib.import_module("ultralytics.models"), name)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/models/__init__.py", line 3, in <module>
+    from .fastsam import FastSAM
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/models/fastsam/__init__.py", line 3, in <module>
+    from .model import FastSAM
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/models/fastsam/model.py", line 10, in <module>
+    from .predict import FastSAMPredictor
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/models/fastsam/predict.py", line 8, in <module>
+    from ultralytics.models.yolo.segment import SegmentationPredictor
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/models/yolo/__init__.py", line 3, in <module>
+    from ultralytics.models.yolo import classify, detect, obb, pose, segment, semantic, world, yoloe
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/models/yolo/semantic/__init__.py", line 4, in <module>
+    from .train import SemanticSegmentationTrainer
+  File "/opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages/ultralytics/models/yolo/semantic/train.py", line 8, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % pip install matplotlib       
+Collecting matplotlib
+  Using cached matplotlib-3.11.0-cp311-cp311-macosx_10_12_x86_64.whl.metadata (80 kB)
+Collecting contourpy>=1.0.1 (from matplotlib)
+  Using cached contourpy-1.3.3-cp311-cp311-macosx_10_9_x86_64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib)
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib)
+  Using cached fonttools-4.63.0-cp311-cp311-macosx_10_9_x86_64.whl.metadata (118 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib)
+  Using cached kiwisolver-1.5.0-cp311-cp311-macosx_10_9_x86_64.whl.metadata (5.1 kB)
+Requirement already satisfied: numpy>=1.25 in /opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages (from matplotlib) (1.26.4)
+Collecting packaging>=20.0 (from matplotlib)
+  Using cached packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+Requirement already satisfied: pillow>=9 in /opt/anaconda3/envs/opencv_playground/lib/python3.11/site-packages (from matplotlib) (12.2.0)
+Collecting pyparsing>=3 (from matplotlib)
+  Using cached pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+Collecting python-dateutil>=2.7 (from matplotlib)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting six>=1.5 (from python-dateutil>=2.7->matplotlib)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Using cached matplotlib-3.11.0-cp311-cp311-macosx_10_12_x86_64.whl (9.4 MB)
+Using cached contourpy-1.3.3-cp311-cp311-macosx_10_9_x86_64.whl (288 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Using cached fonttools-4.63.0-cp311-cp311-macosx_10_9_x86_64.whl (2.4 MB)
+Using cached kiwisolver-1.5.0-cp311-cp311-macosx_10_9_x86_64.whl (66 kB)
+Using cached packaging-26.2-py3-none-any.whl (100 kB)
+Using cached pyparsing-3.3.2-py3-none-any.whl (122 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, pyparsing, packaging, kiwisolver, fonttools, cycler, contourpy, python-dateutil, matplotlib
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+ultralytics 8.4.83 requires nvidia-ml-py>=12.0.0, which is not installed.
+ultralytics 8.4.83 requires polars>=0.20.0, which is not installed.
+ultralytics 8.4.83 requires psutil>=5.8.0, which is not installed.
+ultralytics 8.4.83 requires requests>=2.23.0, which is not installed.
+ultralytics 8.4.83 requires ultralytics-thop>=2.0.18, which is not installed.
+Successfully installed contourpy-1.3.3 cycler-0.12.1 fonttools-4.63.0 kiwisolver-1.5.0 matplotlib-3.11.0 packaging-26.2 pyparsing-3.3.2 python-dateutil-2.9.0.post0 six-1.17.0
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % pip install requests
+Collecting requests
+  Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting charset_normalizer<4,>=2 (from requests)
+  Using cached charset_normalizer-3.4.7-cp311-cp311-macosx_10_9_universal2.whl.metadata (40 kB)
+Collecting idna<4,>=2.5 (from requests)
+  Using cached idna-3.18-py3-none-any.whl.metadata (6.1 kB)
+Collecting urllib3<3,>=1.26 (from requests)
+  Using cached urllib3-2.7.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting certifi>=2023.5.7 (from requests)
+  Using cached certifi-2026.6.17-py3-none-any.whl.metadata (2.5 kB)
+Using cached requests-2.34.2-py3-none-any.whl (73 kB)
+Using cached charset_normalizer-3.4.7-cp311-cp311-macosx_10_9_universal2.whl (309 kB)
+Using cached idna-3.18-py3-none-any.whl (65 kB)
+Using cached urllib3-2.7.0-py3-none-any.whl (131 kB)
+Using cached certifi-2026.6.17-py3-none-any.whl (133 kB)
+Installing collected packages: urllib3, idna, charset_normalizer, certifi, requests
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+ultralytics 8.4.83 requires nvidia-ml-py>=12.0.0, which is not installed.
+ultralytics 8.4.83 requires polars>=0.20.0, which is not installed.
+ultralytics 8.4.83 requires psutil>=5.8.0, which is not installed.
+ultralytics 8.4.83 requires ultralytics-thop>=2.0.18, which is not installed.
+Successfully installed certifi-2026.6.17 charset_normalizer-3.4.7 idna-3.18 requests-2.34.2 urllib3-2.7.0
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/envs/opencv_playground/bin/python /Users/Sapphire_20s/Desktop/OpenCV_pla
+yground/YOLO_00.py
+Matplotlib is building the font cache; this may take a moment.
+Ultralytics : 8.4.83
+Torch        : 2.2.2
+OpenCV       : 4.10.0
+CUDA         : False
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % 
