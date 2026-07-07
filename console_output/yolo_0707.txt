@@ -1,0 +1,34 @@
+conda activate opencv_playground
+/opt/anaconda3/envs/opencv_playground/bin/python /Users/Sapphire_20s/Desktop/OpenCV_playground/YOLO_07.py
+(base) Sapphire_20s@A7DC59 OpenCV_playground % conda activate opencv_playground
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/envs/opencv_playground/bin/python /Users/Sapphire_20s/Des
+ktop/OpenCV_playground/YOLO_07.py
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/envs/opencv_playground/bin/python /Users/Sapphire_20s/Des
+ktop/OpenCV_playground/YOLO_07.py
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/envs/opencv_playground/bin/python /Users/Sapphire_20s/Des
+ktop/OpenCV_playground/YOLO_07.py
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/envs/opencv_playground/bin/python /Users/Sapphire_20s/Des
+ktop/OpenCV_playground/YOLO_07.py
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/envs/opencv_playground/bin/python /Users/Sapphire_20s/Des
+ktop/OpenCV_playground/YOLO_07.py
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/envs/opencv_playground/bin/python /Users/Sapphire_20s/Des
+ktop/OpenCV_playground/YOLO_07.py
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/envs/opencv_playground/bin/python /Users/Sapphire_20s/Des
+ktop/OpenCV_playground/YOLO_07.py
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/envs/opencv_playground/bin/python /Users/Sapphire_20s/Des
+ktop/OpenCV_playground/YOLO_07.py
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/envs/opencv_playground/bin/python /Users/Sapphire_20s/Des
+ktop/OpenCV_playground/YOLO_07.py
+Traceback (most recent call last):
+  File "/Users/Sapphire_20s/Desktop/OpenCV_playground/YOLO_07.py", line 42, in <module>
+    cv2.rectangle(frame,"target",(x1,y1),(x2,y2),(0,255,0),2)
+cv2.error: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'rectangle'
+> Overload resolution failed:
+>  - Can't parse 'pt1'. Expected sequence length 2, got 6
+>  - Can't parse 'pt1'. Expected sequence length 2, got 6
+>  - Can't parse 'rec'. Expected sequence length 4, got 6
+>  - Can't parse 'rec'. Expected sequence length 4, got 6
+
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/envs/opencv_playground/bin/python /Users/Sapphire_20s/Des
+ktop/OpenCV_playground/YOLO_07.py
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % 
