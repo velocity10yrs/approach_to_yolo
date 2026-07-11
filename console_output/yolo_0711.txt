@@ -1,0 +1,49 @@
+conda activate opencv_playground
+/opt/anaconda3/envs/opencv_playground/bin/python /Users/Sapphire_20s/Desktop/OpenCV_playground/YOLO_09.py
+(base) Sapphire_20s@A7DC59 OpenCV_playground % conda activate opencv_playgrou
+nd
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/en
+vs/opencv_playground/bin/python /Users/Sapphire_20s/Desktop/OpenCV_playground
+/YOLO_09.py
+[13:07:53] Warning: person entered ROI.
+Traceback (most recent call last):
+  File "/Users/Sapphire_20s/Desktop/OpenCV_playground/YOLO_09.py", line 71, in <module>
+    triggered_ss(filename,frame)
+  File "/Users/Sapphire_20s/Desktop/OpenCV_playground/YOLO_09.py", line 28, in triggered_ss
+    ok = cv2.imwrite(filepath,frame)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.10.0) /Users/runner/work/opencv-python/opencv-python/opencv/modules/imgcodecs/src/loadsave.cpp:708: error: (-2:Unspecified error) could not find a writer for the specified extension in function 'imwrite_'
+
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/en
+vs/opencv_playground/bin/python /Users/Sapphire_20s/Desktop/OpenCV_playground
+/YOLO_09.py
+[13:12:52] Warning: person entered ROI.
+Traceback (most recent call last):
+  File "/Users/Sapphire_20s/Desktop/OpenCV_playground/YOLO_09.py", line 72, in <module>
+    triggered_ss(filename,frame)
+  File "/Users/Sapphire_20s/Desktop/OpenCV_playground/YOLO_09.py", line 29, in triggered_ss
+    ok = cv2.imwrite(filepath,frame)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.10.0) /Users/runner/work/opencv-python/opencv-python/opencv/modules/imgcodecs/src/loadsave.cpp:708: error: (-2:Unspecified error) could not find a writer for the specified extension in function 'imwrite_'
+
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/en
+vs/opencv_playground/bin/python /Users/Sapphire_20s/Desktop/OpenCV_playground
+/YOLO_09.py
+Traceback (most recent call last):
+  File "/Users/Sapphire_20s/Desktop/OpenCV_playground/YOLO_09.py", line 71, in <module>
+    filename=triggered_warning(filename)
+                               ^^^^^^^^
+NameError: name 'filename' is not defined
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/en
+vs/opencv_playground/bin/python /Users/Sapphire_20s/Desktop/OpenCV_playground
+/YOLO_09.py
+[13:14:42] Warning: person entered ROI.
+ss saved:output_3/screenshot/20260711_131442.jpg
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/en
+vs/opencv_playground/bin/python /Users/Sapphire_20s/Desktop/OpenCV_playground
+/YOLO_09.py
+[13:23:37] Warning: person entered ROI.
+ss saved:output_3/screenshot/20260711_132337.jpg
+[13:23:41] Warning: person entered ROI.
+ss saved:output_3/screenshot/20260711_132341.jpg
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % 
