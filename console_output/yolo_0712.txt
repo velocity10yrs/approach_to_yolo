@@ -1,0 +1,10 @@
+conda activate opencv_playground
+(base) Sapphire_20s@A7DC59 OpenCV_playground % conda activate opencv_playgrou
+nd
+/opt/anaconda3/envs/opencv_playground/bin/python /Users/Sapphire_20s/Desktop/OpenCV_playground/YOLO_10.py
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % /opt/anaconda3/en
+vs/opencv_playground/bin/python /Users/Sapphire_20s/Desktop/OpenCV_playground
+/YOLO_10.py
+[18:08:23] Warning: person entered ROI.
+[18:08:27] Warning: person entered ROI.
+(opencv_playground) Sapphire_20s@A7DC59 OpenCV_playground % 
